@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Advance selectors </title>
+        <style>
+            input[type=text]{
+                border:2px solid red;
+            }
+            input[type=password]{
+                border: 2px solid black (0, 255, 136);
+            }
+            ul>li{
+                color:rgb(244, 14, 14)
+            }
+            h1+p{
+                color:rgb(255, 0, 0);
+                font-weight: bold;
+            }
+            a:hover{
+                color:rgb(88, 8, 248);
+                font-size: 18px;
+            }
+            ul>li:nth-child(2){
+                background-color: rgb(252, 252, 252);
+            }
+            ul>li::before{
+                content: "⛧𐕣";
+            }
+            ul>li::after{
+                content: "⛧𐕣"
+            }
+        </style>
+    </head>
+    <body>
+        Name <input type = text> <br>
+        Password <input type = password> <br>
+    <ul>
+        <li>
+            Teen X
+        </li>
+        <li>
+            A great chaos
+        </li>
+        <li>
+            More chaos
+        </li>
+        <li>Project X
+            
+        </li>
+    </ul>
+    <h1>Ken carson</h1>
+    <p>Kenyatta Lee Frazier Jr., known professionally as Ken Carson, is an American rapper and record producer from Atlanta, Georgia. Carson initially gained attention for his SoundCloud releases and collaborations with fellow Atlanta rapper Playboi Carti. 
+    </p>
+       <a href="#"> Ken carson</a> 
+    </body>
+</html>
