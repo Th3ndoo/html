@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>myfuntions</title>
+    </head>
+    <body>
+        <h3>A funtion can access the variable inside the function</h3>
+        <button type = "button" onclick = "myfunction()">click me</button>
+        <p id = "demo"></p>
+        <p id = "demo1"></p>
+        <p id = "demo2"></p>
+        <script>
+            var b = 10;
+            function myfunction()
+            {
+                var a = 4;
+                document.getElementById("demo2").innerHTML = a;
+                document.getElementById("demo1").innerHTML = b;
+                document.getElementById("demo").innerHTML = a * b;
+            }
+        </script>
+    </body>
+</html>
