@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <h1>case</h1>
+        <p id = "myid"></p>
+        <script>
+            var dayno = (new Date().getDay())
+            var day
+            switch (dayno)
+            {
+                case 0:
+                day = "Sunday";
+                
+                 case 1:
+                day = "Monday";
+                break
+                 case 2:
+                day = "Tuesday";
+                break
+                 case 3:
+                day = "Wednesday";
+                break
+                 case 4:
+                day = "Thursday";
+                break
+                 case 5:
+                day = "Friday";
+                break
+                 case 6:
+                day = "Saturday";
+                break
+            }
+         document.write("myday")
+         document.getElementById("myid").innerHTML = "Today is "+day
+        </script>
+    </body>
+</html>
