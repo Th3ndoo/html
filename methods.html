@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Methods</title>
+        <title>
+            Methods in arrays
+        </title>
     </head>
     <body>
-        <h1>Methods</h1>
+        <h1>methods in Arrays</h1>
+        <p>Join methods join all the arrays element by using a separation</p>
+        <div id = "one"></div>
+        <p>pop method will take out the last element in the array</p>
+        <div id = "two"></div>
+        <div id = "three"></div>
+        <div id = "four"></div>
+
         <script>
-            document.write ("The value is " +Math.abs(-12) + "<br>")
-            document.write(" The value of sin is   " +Math.asin(-1) +"<br>")
-            document.write(" The value of cos is " +Math.acos(-1) +"<br>")
-            document.write(" The value of tan value is " +Math.atan(2) +"<br>")
-
-
+            a = ["playboi carti", "homoxide gang", "destroy lonely", "ken carson"]
+            document.getElementById("one").innerHTML = a.join("*")
+            document.getElementById("two").innerHTML = a
+            a.pop()
+            document.getElementById("three").innerHTML = a
         </script>
     </body>
 </html>

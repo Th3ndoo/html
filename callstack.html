@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>call stack</title>
+    </head>
+    <body>
+        <h1>Callstack</h1>
+        <p>the call stack works under the lasy in first out (IFO) operation</p>
+        
+        <div id = "out"></div>
+
+        <script>
+        function add(a,b)
+        {
+            return a + b
+        }
+        function avg(a,b)
+        {
+            return add(a,b)/2
+        }
+        document.getElementById("out").innerHTML = "the average is "+avg(12,34)
+        </script>
+    </body>
+</html>
