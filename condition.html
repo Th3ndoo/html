@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Conditional statements
+        </title>
+    </head>
+    <body>
+    <h1> Let us try conditional</h1>
+    <input type = button onclick = "greetings()" value = "click me">
+    <p id = 'myid'></p>
+    <script>
+        function greetings()
+        {
+            var h = new Date().getHours()
+            var greet;
+
+        
+        if (h < 10)
+        {
+            greet = "Good Morning"
+        }
+        else if  (h < 20)
+        {
+            greet = "Good Day"
+        }
+        else 
+        {
+            greet = "Good evening"
+        }
+        document.getElementById("myid").innerHTML = "The current time is "+h + "<br>"+greet
+
+    }
+    </script>
+    </body>
+</html>
