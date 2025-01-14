@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Generate numbers
+        </title>
+    </head>
+    <body>
+        <h1> Generate numbers</h1>
+        <button onclick = "generate()">Click to generate random number</button>
+        <p id = "myid"></p>
+        <script>
+            function generate()
+            {
+                var i = 0;
+                var s = "";
+                var tenp = 0
+                while (i <= 20)
+            {
+                temp = Math.round(Math.random() * 10)
+                s = s + temp + "<br>"
+                i++
+            }
+            
+            document.getElementById("myid").innerHTML = s
+            }
+        </script>
+    </body>
+</html>
