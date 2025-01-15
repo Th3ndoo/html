@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My title</title>
+    </head>
+    <body>
+        <script>
+            class car{
+                constructor(brand)
+                {
+                    this.brand = brand
+                }
+                display()
+                {
+                    document.write("The car nae is ",this.brand)
+                }
+            }
+                class  model extends car{
+                    constructor(brand,modelyr){
+                        super(brand)
+                        this.modelyr = modelyr}
+                        disp(){
+                          this.display()
+                        
+                    document.write("<br> The car model is ",this.modelyr)
+                }}
+            
+
+            model1 = new model("Mercedes Benz", 2022)
+            model1.disp()
+        </script>
+    </body>
+</html>

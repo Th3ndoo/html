@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Static methods
+        </title>
+    </head>
+    <body>
+        <script>
+            class student{
+                constructor(name)
+                {
+                    this.name = name
+                }
+                print()
+                {
+                    document.write("The name of the student is ",this.name)
+                }
+                static hello(name)
+                {
+                    document.write("<br> Hello I am ",name)
+                }
+            }
+            std1 = new student("Jordan")
+            std1.print()
+            student.hello("Jordan")
+        </script>
+    </body>
+</html>

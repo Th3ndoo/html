@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Classes</title>
+    </head>
+    <body>
+        <script>
+            class student{
+                constructor(name,yr1){
+                    this.name = name;
+                    this.yr1 = yr1;
+                }
+                age(){
+                    var yr = new Date().getFullYear()
+
+                    
+
+                    var a = yr - this.yr1
+                    return a
+                }
+            }
+            student1 = new student("Kenyatta",2001)
+            document.write("The age is " ,student1.age())
+        </script>
+    </body>
+</html>
