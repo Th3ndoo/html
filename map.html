@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            map function
+        </title>
+    </head>
+    <body>
+        <h1>Map function</h1>
+        <p id = "para1"></p>
+
+        <script>
+            var number = [12, 15, 13, 2]
+            function mapfunction(number)
+            {
+                return number *12
+            }
+            var newar = number.map(mapfunction)
+            document.getElementById("para1").innerHTML = newar
+        </script>
+    </body>
+</html>

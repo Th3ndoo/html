@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sorting numbers
+        </title>
+    </head>
+    <body>
+        <button onclick = "asc()">ascending order</button>
+        <button onclick = "desc()">descending order</button>
+        <p id = "para1"></p>
+
+        <script>
+            var points = [14, 23, 42, 38, 16, 19, 82, 12]
+            document.getElementById("para1").innerHTML = points
+            function asc(){
+
+                points.sort(function(a,b){return a - b})
+                document.getElementById("para1").innerHTML = points
+            }
+            function desc(){
+            points.sort(function(a,b){return b - a})
+            document.getElementById("para1").innerHTML = points
+            }
+        </script>
+    </body>
+</html>
