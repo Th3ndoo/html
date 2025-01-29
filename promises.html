@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            jspromises
+        </title>
+    </head>
+    <body>
+        <script>
+            function mydisplayer(some){
+                document.getElementById("demo").innerHTML = somme;
+            }
+            function sum(a,b){
+                var su = a+b;
+                mydisplayer(sum)
+            }
+            var p = new promise(function(myresolve,myreject)  {
+                let a = 1+1
+                if (a ==2 )
+            {
+                resolve("success")
+            }
+            else{
+                myreject("failed")}
+            
+        });
+            p.then((message)=>{
+            console.log("this is the in then "+message)
+            })
+            catcb((message)=>{
+                console.log("this is in the catch"+message)
+            })
+
+        </script>
+    </body>
+</html>

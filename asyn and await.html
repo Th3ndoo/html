@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Async and await
+        </title>
+    </head>
+    <body>
+        <h2> Javascript async / await</h2>
+        <h1 id = "result"></h1>
+        <script>
+            async function add(a,b){
+                let respone = await display (a+b)
+                display(respone)
+            }
+            console.log(1)
+            console.log(2)
+            function display(some){
+                console.log(some )
+            }    
+            add(5,20);
+        </script>
+    </body>
+</html>
