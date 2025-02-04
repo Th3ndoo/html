@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            check validation
+        </title>
+    </head>
+    <body>
+        
+            <input id = "myid" type = number min = 20 max = 50 required>
+            <button onclick = "check()">Validate</button>
+            <p id = "result"></p>
+            <script>
+                function check(){
+                    document.write("ok")
+                    var x = document.getElementById("myid")
+                  
+                    if(!x.checkValidity())
+                {
+                    document.getElementById("result").innerHTML = x.validationMessage;
+                }
+                else{
+                    document.getElementById("result").innerHTML = "input ok";
+                }
+            </script>
+    </body>
+</html>
