@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            area
+        </title>
+    </head>
+    <body>
+        <script>
+            var ch;
+            var l,b,area,h,r;
+            ch = prompt("enter your choice 1. Rectangle 2. Triangle 3. Circle 4. Parrelellogram")
+            if (ch == 1)
+        {
+          
+            l = prompt("enter the length of a rectangle")
+            b = prompt("enter the breadth of the rectangle")
+            area = Number(l) * Number(b)
+            alert("the area of the rectangle is "+area)
+
+        }
+        else if  (ch ==2){
+            l = prompt("enter the length of a triangle")
+            b = prompt("enter the breadth of the triangle")
+            area = (Number(l) * Number(b))/2
+            alert("the area of the triangle is "+area)
+        }
+        else if (ch == 3)
+        {
+            
+            r = prompt("enter the radius of a circle")
+            area = 3.14* Number(r) * Number(r)
+            alert("the area of the circle is "+area)
+        }
+        else if (ch == 4)
+        {
+              
+            l = prompt("enter the height of parellogram")
+            b = prompt("enter the base of the parellelogram")
+            area = Number(l) * Number(b)
+            alert("the area of the parellelogram is "+area)
+        }
+        </script>
+    </body>
+</html>
