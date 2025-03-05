@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            navigation bar
+        </title>
+        <style>
+            .topnav{
+                overflow : hidden;
+                background-color: black;
+            }
+            .topnav a{
+                float:left;
+                color:deeppink;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            topnav a:hover{
+                color:brown;
+                font-size: 20px;
+            }
+            .topnav a.active{
+                color: lavenderblush;
+                font-size: 20px;
+            }
+            img {
+                width:100%;
+                height:100%;
+                border:10px;
+                opacity: 0.5;
+            }
+            .desc {
+                position : absolute;
+                top: 50%;
+                left: 50%;
+                color:rgb(0, 0, 0);
+                font-weight: bold;
+                font-size: 20px;
+                font-family: "Times";
+            }
+            .desc1 {
+                position : absolute;
+                top: 60%;
+                left: 50%;
+                color:rgb(0, 0, 0);
+                font-weight: bold;
+                font-size: 14px;
+                font-family: "Times";
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "topnav">
+            <a class = "active" href = "index.html">Home</a>
+            <a href = "About.html">About</a>
+            <a href = contact.html>Contact</a>
+            <a href = "gallery.html">Gallery</a>
+        </div>
+        <div id = "aboutme">
+          <img src = "images.jpg"></img>
+          <p class = "desc">Kenyatta Fraziers</p>
+          <p class = "desc1" id = "name1"> I am a producer, United Stated of America, Atlanta</p>
+
+            
+        </div>
+    </body>
+</html>
