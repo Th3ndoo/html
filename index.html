@@ -1,50 +1,72 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Calculator</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    <div class="wrapper">
-        <div class="container">
-            <h1>Calculator</h1>
-            <div class="row">
-                <input type="text" name="result" class="result" id="result" value="" placeholder="Result" readonly />
-                <input type="button" value="+" onclick="setScreenValue('+')"/>
-                <input type="button" value="1" onclick="setScreenValue('1')"/>
-                <input type="button" value="2" onclick="setScreenValue('2')"/>
-                <input type="button" value="3" onclick="setScreenValue('3')"/>
-                <input type="button" value="-" onclick="setScreenValue('-')"/>
-            </div>
-            <div class="row">
-                <input type="button" value="4" onclick="setScreenValue('4')" />
-                <input type="button" value="5" onclick="setScreenValue('5')" />
-                <input type="button" value="6" onclick="setScreenValue('6')" />
-                <input type="button" value="x" onclick="setScreenValue('*')" />
-            </div>
-            <div class="row">
-                <input type="button" value="7" onclick="setScreenValue('7')" />
-                <input type="button" value="8" onclick="setScreenValue('8')" />
-                <input type="button" value="9" onclick="setScreenValue('9')" />
-                <input type="button" value="/" onclick="setScreenValue('/')"/>
-            </div>
-            <div class="row">
-                <input type="button" value="%" onclick="setScreenValue('%')" />
-                <input type="button" value="0" onclick="setScreenValue('0')" />
-                <input type="button" value="." class="dot" onclick="setScreenValue('.')" />
-                <input type="button" value="=" onclick="calculateResult()" />
-            </div>
-            <div class="row">
-                <input type="button" value="CLEAR" onclick="clearScreen()" id="clear" class="clear-button"/>
-            </div>
+    <head>
+        <title>
+            navigation bar
+        </title>
+        <style>
+            body {
+                margin: 0px;
+            }
+            .topnav{
+                overflow : hidden;
+                background-color: black;
+            }
+            .topnav a{
+                float:left;
+                color:deeppink;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            topnav a:hover{
+                color:brown;
+                font-size: 20px;
+            }
+            .topnav a.active{
+                color: lavenderblush;
+                font-size: 20px;
+            }
+            img {
+                width:100%;
+                height:100%;
+                border:10px;
+                opacity: 0.5;
+            }
+            .desc {
+                position : absolute;
+                top: 50%;
+                left: 50%;
+                color:rgb(0, 0, 0);
+                font-weight: bold;
+                font-size: 20px;
+                font-family: "Times";
+            }
+            .desc1 {
+                position : absolute;
+                top: 60%;
+                left: 50%;
+                color:rgb(0, 0, 0);
+                font-weight: bold;
+                font-size: 14px;
+                font-family: "Times";
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "topnav">
+            <a class = "active" href = "index.html">Home</a>
+            <a href = "About.html">About</a>
+            <a href = contact.html>Contact</a>
+            <a href = "gallery.html">Gallery</a>
         </div>
-    </div>
+        <div id = "aboutme">
+          <img src = "images.jpg"></img>
+          <p class = "desc">Kenyatta Fraziers</p>
+          <p class = "desc1" id = "name1"> I am a producer, United Stated of America, Atlanta</p>
 
-  <script src="script.js"></script>
-</body>
+            
+        </div>
+    </body>
 </html>

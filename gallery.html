@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <meta charset = "UTF-8">
+    <meta = "viewport" content="width = device width, initial scale = 1.8">
+    <head>
+    <title>Gallery</title>
+    <style>
+      body{
+            background-color: bisque;
+            margin: 0px;
+        }
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+            text-transform: capitalize;
+
+        }
+        .carousel-container
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+        }
+        .myslides {
+            display: none;
+            max-height: 100%;
+            max-width: 100%;
+        }
+        .topnav{
+                overflow : hidden;
+                background-color: black;
+            }
+            .topnav a{
+                float:left;
+                color:deeppink;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            topnav a:hover{
+                color:brown;
+                font-size: 20px;
+            }
+            .topnav a.active{
+                color: lavenderblush;
+                font-size: 20px;
+            }
+        
+    </style>
+    </head>
+    <body>
+        <div class = "topnav">
+            <a class = "active" href = "index.html">Home</a>
+            <a href = "About.html">About</a>
+            <a href = contact.html>Contact</a>
+            <a href = "gallery.html">Gallery</a>
+        </div>
+        <h1> Carti</h1>
+        <div class = "carousel-container">
+            <img class = "myslides" src = "download.jpg" width = 300px height = 300px border = 5 alt = "slide1">
+            <img class = "myslides" src = "images (1).jpg" width = 300px height = 300px border = 5 alt = "slide2">
+            <img class = "myslides" src = "images (2).jpg" width = 300px height = 300px border = 5 alt = "slide3">
+        </div>
+        <script src = "script1.js"></script>
+    </body>
+</html>
